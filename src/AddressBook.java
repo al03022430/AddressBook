@@ -22,6 +22,7 @@ public class AddressBook {
                         break;
                     case 2:
                         create(agenda);
+                        save(agenda);
                         break;
                     case 3:
                         delet(agenda);
@@ -42,9 +43,10 @@ public class AddressBook {
     }
     public static void list(HashMap agenda) {
         System.out.println("\n Lista de contactos");
+        System.out.println("\n Numero    /    Nombre");
         for (Iterator<Entry<String, Object>> entries = agenda.entrySet().iterator(); entries.hasNext(); ) {
             Map.Entry<String, Object> entry = entries.next();
-            String output = String.format("%s:%s:", entry.getKey(), entry.getValue());
+            String output = String.format("%s   :     %s:", entry.getKey(), entry.getValue());
             System.out.println(output);
         }
     }
