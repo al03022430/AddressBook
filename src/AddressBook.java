@@ -83,14 +83,6 @@ public class AddressBook {
         }
         agenda.remove(telefono);
     }
-    public static void fav(HashMap agenda) {
-        System.out.println("\n Lista de contactos");
-        for (Iterator<Entry<String, Object>> entries = agenda.entrySet().iterator(); entries.hasNext(); ) {
-            Map.Entry<String, Object> entry = entries.next();
-            String output = String.format("%s:%s", entry.getKey(), entry.getValue());
-            System.out.println(output);
-        }
-    }
 
     public static void save(HashMap agenda){
         String outputFilename = "src/agenda.csv";
