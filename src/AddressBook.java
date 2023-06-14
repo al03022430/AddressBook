@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.Map.Entry;
 public class AddressBook {
     public static void main (String[]args){
-        HashMap<String, Object> agenda = new HashMap<>();
+        HashMap<String, String> agenda = new HashMap<>();
         Scanner ag = new Scanner(System.in);
         boolean Salir = false;
         int op;
